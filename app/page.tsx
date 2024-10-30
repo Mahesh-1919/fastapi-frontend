@@ -47,7 +47,9 @@ const Page = () => {
 
   return (
     <div>
-      <h1 className="text-4xl text-center p-8">Movie Listing</h1>
+      <h1 className="text-4xl text-black text-center p-8 font-bold font-serif">
+        Movie Shop
+      </h1>
       <form
         onSubmit={submitHandler}
         className="flex flex-col items-center justify-center gap-8 text-black mb-8"
@@ -57,21 +59,26 @@ const Page = () => {
             type="text"
             name="movieName"
             placeholder="Movie name"
-            className="p-4 rounded-md"
+            className="p-4 rounded-md shadow-xl bg-white/90"
             required
           />
           <input
             type="text"
             name="diector" // Consider changing this to "director" for clarity
             placeholder="Director Name"
-            className="p-4 rounded-md"
+            className="p-4 rounded-md shadow-xl bg-white/90"
             required
           />
-          <input type="date" name="date" className="p-4 rounded-md" required />
+          <input
+            type="date"
+            name="date"
+            className="p-4 rounded-md shadow-xl bg-white/90"
+            required
+          />
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white rounded-md px-8 py-2"
+          className="bg-[#964B00] text-white rounded-md px-8 py-2 shadow-xl"
         >
           Submit
         </button>
